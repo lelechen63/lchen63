@@ -112,6 +112,44 @@
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+<!-- #######################Project 0####################################### -->
+
+    <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'cvpr2019'><img src='cvpr2019.gif'></div>
+        <img src='cvpr2019.gif'>
+        </div>
+        <script type="text/javascript">
+        function hdrnet_start() {
+        document.getElementById('cvpr2019').style.opacity = "1";
+        }
+        function hdrnet_stop() {
+        document.getElementById('cvpr2019').style.opacity = "0";
+        }
+        hdrnet_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+<!--         <p><a href="1140.pdf"> -->
+        <papertitle>Hierarchical Cross-modal Talking Face Generation with Dynamic Pixel-wise Loss</papertitle></a><br>
+        <strong>Lele Chen</strong>, <a href="https://www.urmc.rochester.edu/people/30363779-ross-k-maddox">Ross K Maddox</a>, <a href="http://www2.ece.rochester.edu/~zduan/">Zhiyao Duan </a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu </a> <br>
+        <em>CVPR</em>, 2019 <br>
+<!--         <a href="1140.pdf">paper</a>
+        /
+        <a href="1140_poster.pdf">poster</a>
+        /
+        <a href="https://www.youtube.com/watch?v=mmI31GdGL5g">video</a>
+        /
+        <a href="LeleECCV2018.bib">bibtex</a>
+        /
+        <a href="https://shiropen.com/seamless/lip-movements-generation-at-a-glance">news</a>
+        /
+        <a href="https://github.com/lelechen63/3d_gan">code</a> -->
+        <p></p>
+        <p>Given an arbitrary audio speech and one face image of arbitrary target identity, generate synthesized facial movements of the target identity saying the speech. To perform well, a model needs to not only consider the retention of target identity, photo-realistic of synthesized images, consistency and smoothness of lip images in a sequence, but more importantly, learn the correlations between audio speech and lip movements.</p>
+      </td>
+    </tr>
 <!-- #######################Project 1####################################### -->
 
     <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()" >
