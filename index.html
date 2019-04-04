@@ -53,6 +53,21 @@
     -moz-transition: opacity .2s ease-in-out;
     -webkit-transition: opacity .2s ease-in-out;
     }
+    .three
+    {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    }
+    .four
+    {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
     .fade {
      transition: opacity .2s ease-in-out;
      -moz-transition: opacity .2s ease-in-out;
@@ -115,10 +130,10 @@
 <!-- #######################Project 0####################################### -->
 
     <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()" >
-      <td width="15%">
+      <td width="25%">
         <div class="one">
-        <div class="two" id = 'cvpr2019'><img src='cvpr2019.gif'></div>
-        <img src='cvpr2019.gif'>
+        <div class="two" id = 'cvpr2019'><img src='cvpr2019.gif' width="180" height="180"></div>
+        <img src='cvpr2019.gif' width="180" height="180">
         </div>
         <script type="text/javascript">
         function hdrnet_start() {
@@ -130,7 +145,7 @@
         hdrnet_stop()
         </script>
       </td>
-      <td valign="top" width="50%">
+      <td valign="top" width="75%">
 <!--         <p><a href="1140.pdf"> -->
         <papertitle>Hierarchical Cross-modal Talking Face Generation with Dynamic Pixel-wise Loss</papertitle></a><br>
         <strong>Lele Chen</strong>, <a href="https://www.urmc.rochester.edu/people/30363779-ross-k-maddox">Ross K Maddox</a>, <a href="http://www2.ece.rochester.edu/~zduan/">Zhiyao Duan </a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu </a> <br>
@@ -154,7 +169,7 @@
         /
         <a href="https://github.com/lelechen63/3d_gan">code</a> -->
         <p></p>
-        <p>Given an arbitrary audio speech and one face image of arbitrary target identity, generate synthesized facial movements of the target identity saying the speech. To perform well, a model needs to not only consider the retention of target identity, photo-realistic of synthesized images, consistency and smoothness of lip images in a sequence, but more importantly, learn the correlations between audio speech and lip movements.</p>
+        <p>We devise a cascade GAN approach to generate talking face video, which is robust to different face shapes, view angles, facial characteristics, and noisy audio conditions. Instead of learning a direct mapping from audio to video frames, we propose first to transfer audio to high-level structure, i.e., the facial landmarks, and then to generate video frames conditioned on the landmarks. Compared to a direct audio-to-image approach, our cascade approach avoids fitting spurious correlations between audiovisual signals that are irrelevant to the speech content. We, humans, are sensitive to temporal discontinuities and subtle artifacts in video. To avoid those pixel jittering problems and to enforce the network to focus on audiovisual-correlated regions, we propose a novel dynamically adjustable pixel-wise loss with an attention mechanism.</p>
       </td>
     </tr>
 <!-- #######################Project 1####################################### -->
